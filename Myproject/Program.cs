@@ -21,8 +21,8 @@
         int greatestNumber = array[0];
         for(int index = 0; index < arraySize; index++){
             int next = index + 1;
-            if(next < arraySize){
-                if(greatestNumber < array[next]) greatestNumber = array[next];
+            if((next < arraySize) && (greatestNumber < array[next])){
+                greatestNumber = array[next];
             }
         }
         return greatestNumber;
