@@ -12,24 +12,17 @@
 
     public void GenerateArray(){
         for(int index = 0; index < arraySize; index++){
-            int number = random.Next(1,100);
+            int number = random.Next(1,5);
             array[index] = number; // add random number to array
         }
     }
 
     public int GreatestNumber(){
-        int greatestNumber = 0;
-
+        int greatestNumber = array[0];
         for(int index = 0; index < arraySize; index++){
             int next = index + 1;
-
             if(next < arraySize){
-                if(array[index] >= array[next]){
-                    greatestNumber = array[index];
-                }
-                else{
-                    greatestNumber = array[next];
-                }
+                if(greatestNumber < array[next]) greatestNumber = array[next];
             }
         }
         return greatestNumber;
