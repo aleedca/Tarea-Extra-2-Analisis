@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CPUw0113\\Documents\\ALEXIA\\Universidad\\TEC\\Ing Compu\\Análisis de algoritmos\\Myproject\\Myproject.csproj": {}
+    "C:\\Users\\CPUw0113\\Documents\\ALEXIA\\Universidad\\TEC\\Ing Compu\\Análisis de algoritmos\\Tarea-Extra-2-Analisis\\Myproject\\Myproject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CPUw0113\\Documents\\ALEXIA\\Universidad\\TEC\\Ing Compu\\Análisis de algoritmos\\Myproject\\Myproject.csproj": {
+    "C:\\Users\\CPUw0113\\Documents\\ALEXIA\\Universidad\\TEC\\Ing Compu\\Análisis de algoritmos\\Tarea-Extra-2-Analisis\\Myproject\\Myproject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CPUw0113\\Documents\\ALEXIA\\Universidad\\TEC\\Ing Compu\\Análisis de algoritmos\\Myproject\\Myproject.csproj",
+        "projectUniqueName": "C:\\Users\\CPUw0113\\Documents\\ALEXIA\\Universidad\\TEC\\Ing Compu\\Análisis de algoritmos\\Tarea-Extra-2-Analisis\\Myproject\\Myproject.csproj",
         "projectName": "Myproject",
-        "projectPath": "C:\\Users\\CPUw0113\\Documents\\ALEXIA\\Universidad\\TEC\\Ing Compu\\Análisis de algoritmos\\Myproject\\Myproject.csproj",
+        "projectPath": "C:\\Users\\CPUw0113\\Documents\\ALEXIA\\Universidad\\TEC\\Ing Compu\\Análisis de algoritmos\\Tarea-Extra-2-Analisis\\Myproject\\Myproject.csproj",
         "packagesPath": "C:\\Users\\CPUw0113\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CPUw0113\\Documents\\ALEXIA\\Universidad\\TEC\\Ing Compu\\Análisis de algoritmos\\Myproject\\obj\\",
+        "outputPath": "C:\\Users\\CPUw0113\\Documents\\ALEXIA\\Universidad\\TEC\\Ing Compu\\Análisis de algoritmos\\Tarea-Extra-2-Analisis\\Myproject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\CPUw0113\\AppData\\Roaming\\NuGet\\NuGet.Config"
