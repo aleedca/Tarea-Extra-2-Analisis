@@ -1,4 +1,8 @@
-﻿class Program
+﻿using System;
+using System.Diagnostics;
+using System.Threading;
+
+class Program
 {
     int arraySize;
     int[] array;
@@ -6,7 +10,7 @@
     int counter;
 
     public Program(){
-        arraySize = 10;
+        arraySize = 500000;
         counter = 0;
         array = new int[arraySize+1];
         random = new Random();
@@ -14,7 +18,7 @@
 
     public void GenerateArray(){
         for(int index = 0; index < arraySize; index++){
-            int number = random.Next(1,10);
+            int number = random.Next(1,10000);
             array[index] = number; // add random number to array
         }
     }
@@ -48,8 +52,15 @@
     private static void Main(string[] args){
         Program p = new Program();
         p.GenerateArray();
-        p.PrintArray();
-        Console.WriteLine(p.GreatestNumber());
-        Console.WriteLine($"Time complexity: {p.counter}");
+
+        Stopwatch stopWatch = new Stopwatch();
+        stopWatch.Start();
+        int result = p.GreatestNumber();
+        stopWatch.Stop();
+
+        Console.WriteLine($"Step counter: {p.counter}");
+        Console.WriteLine($"Execution Time: {stopWatch.ElapsedMilliseconds} milliseconds");
+        Console.WriteLine($"Greatet number is: {result}");
+        
     }
 }
