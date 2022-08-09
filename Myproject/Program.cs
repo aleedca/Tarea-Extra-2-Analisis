@@ -10,7 +10,7 @@ class Program
     int counter;
 
     public Program(){
-        arraySize = 500000;
+        arraySize = 10;
         counter = 0;
         array = new int[arraySize+1];
         random = new Random();
@@ -29,11 +29,13 @@ class Program
         counter += (2*arraySize) + 2;
         for(int index = 0; index < arraySize; index++){
             int next = index + 1;
-            counter++;
             counter += 2;
-            if((next < arraySize) && (greatestNumber < array[next])){
-                greatestNumber = array[next];
+            if(next < arraySize){
                 counter++;
+                if(greatestNumber < array[next]){
+                    greatestNumber = array[next];
+                    counter++;
+                }
             }
         }
         counter ++;
@@ -58,6 +60,7 @@ class Program
         int result = p.GreatestNumber();
         stopWatch.Stop();
 
+        Console.WriteLine($"Total elements: {p.arraySize}");
         Console.WriteLine($"Step counter: {p.counter}");
         Console.WriteLine($"Execution Time: {stopWatch.ElapsedMilliseconds} milliseconds");
         Console.WriteLine($"Greatet number is: {result}");
